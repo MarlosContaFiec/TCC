@@ -1,0 +1,123 @@
+{
+  "usuario": {
+    "id": 1,
+    "tipo": "cliente",
+    "nome": "Marlos",
+    "email": "teste@email.com",
+    "senha_hash": "hash",
+    "ativo": true,
+    "data_criacao": "2026-02-19"
+  },
+
+  "empresa": {
+    "id": 1,
+    "razao_social": "Empresa Exemplo LTDA",
+    "nome_fantasia": "Empresa Exemplo",
+    "cnpj": "00.000.000/0001-00",
+    "verificada": true,
+    "descricao": "Descrição da empresa",
+    "logo_url": "https://site.com/logo.png",
+    "cor_primaria": "#FF6600",
+    "cor_secundaria": "#222222",
+    "cidade": "Indaiatuba",
+    "ativo": true
+  },
+  "servico": {
+    "id": 1,
+    "empresa_id": 1,
+    "nome": "Corte de cabelo",
+    "descricao": "Corte masculino",
+    "duracao_minutos": 40,
+    "preco_base": 50.00,
+    "ativo": true
+  },
+
+  "agenda_evento": {
+    "id": 1,
+    "empresa_id": 1,
+    "tipo": "unico",
+    "titulo": "Desconto especial",
+    "descricao": "20% em pratos de peixe",
+    "data_inicio": "2026-02-14",
+    "data_fim": "2026-02-14",
+    "tag": "desconto"
+  },
+
+  "agenda_padrao": {
+    "id": 1,
+    "empresa_id": 1,
+    "dia_semana": "domingo",
+    "tag": "fechado"
+  },
+
+  "agenda_excecao": {
+    "id": 1,
+    "empresa_id": 1,
+    "data": "2026-09-02",
+    "tag": "aberto",
+    "observacao": "Exceção de limpeza"
+  },
+
+  "agendamento": {
+    "id": 1,
+    "cliente_id": 2,
+    "servico_id": 1,
+    "data": "2026-03-10",
+    "hora_inicio": "14:00",
+    "hora_fim": "14:40",
+    "status": "confirmado"
+  },
+
+  "avaliacao": {
+    "id": 1,
+    "agendamento_id": 1,
+    "cliente_id": 2,
+    "estrelas": 5,
+    "feedback": "Excelente atendimento",
+    "resposta_empresa": "Obrigado pela preferência"
+  },
+
+  "mensagem": {
+    "id": 1,
+    "empresa_id": 1,
+    "cliente_id": 2,
+    "tipo": "cancelamento",
+    "mensagem": "Cancelamento solicitado",
+    "automatica": true,
+    "data_envio": "2026-03-09T10:00:00",
+    "Quem": "C(ou E)"
+  },
+
+  "regra_empresa": {
+    "id": 1,
+    "empresa_id": 1,
+    "tipo": "cancelamento",
+    "prazo_horas": 24,
+    "taxa": 30.00,
+    "mensagem_padrao": "Cancelamentos com menos de 24h terão taxa"
+  },
+
+  "dashboard_empresa": {
+    "id": 1,
+    "empresa_id": 1,
+    "total_clientes": 120,
+    "total_servicos": 6,
+    "total_cancelamentos": 8,
+    "total_adiamentos": 5
+  },
+
+  "favorito": {
+    "id": 1,
+    "cliente_id": 2,
+    "empresa_id": 1
+  },
+
+  "perfil_cliente": {
+    "id": 1,
+    "cliente_id": 2,
+    "cpf": "000.000.000-00",
+    "alergias": "Nenhuma",
+    "observacoes_medicas": "N/A"
+  }
+}
+
