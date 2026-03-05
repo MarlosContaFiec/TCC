@@ -115,9 +115,7 @@
   "perfil_cliente": {
     "id": 1,
     "cliente_id": 2,
-    "cpf": "000.000.000-00",
-    "alergias": "Nenhuma",
-    "observacoes_medicas": "N/A"
+    "cpf": "000.000.000-00"
   }
 }
 
