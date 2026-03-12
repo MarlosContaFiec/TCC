@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/../src/utils/modal.php'; ?>
+
 <form method="POST" action="?rota=editar-perfil" enctype="multipart/form-data">
 
 <input name="razao_social" placeholder="Razão Social">
@@ -11,5 +13,9 @@
 <input type="file" name="logo">
 
 <button type="submit">Salvar</button>
+
+<button type="button" onclick="abrirModalServicos()">
+  Editar Serviços
+</button>
 
 </form>

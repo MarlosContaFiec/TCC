@@ -14,6 +14,8 @@ $rota = $_GET['rota'] ?? 'home';
 
 match($rota) {
 
+    'perfil' => require __DIR__.'/perfil.php',
+
     'editar-perfil' => require __DIR__.'/../src/Http/EmpresaController.php',
 
     default => print "
